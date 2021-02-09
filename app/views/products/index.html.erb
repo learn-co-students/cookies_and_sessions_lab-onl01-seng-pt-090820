@@ -4,7 +4,7 @@
 <% end %>
 
 <form>
-<%= form_tag "/", method:POST %>
+<%= form_tag "/", method:POST do %>
   <label>Cart:</label><br>
   <%= text_field_tag :'product' %><br>
   <%= text_area_tag :'product' %><br>
