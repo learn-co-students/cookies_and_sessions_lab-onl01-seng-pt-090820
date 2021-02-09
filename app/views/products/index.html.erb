@@ -1,8 +1,7 @@
-<ul>  
-  <%= cart.each do |product| %>
+<h1> Cart </h1>
+<%= cart.each do |product| %>
     <li><%= product %></li>
-  <% end %>
-</ul>
+<% end %>
 
 <%= form_for :product do |f| %>
   <%= f.text_field :product %>
