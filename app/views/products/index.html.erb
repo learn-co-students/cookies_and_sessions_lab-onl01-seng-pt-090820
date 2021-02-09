@@ -4,6 +4,6 @@
 <% end %>
 
 <%= form_for :product do |f| %>
-  <%= f.text_field :product %>
+  <%= f.text_field product, name: "product" %>
   <%= f.submit %>
 <% end %>
