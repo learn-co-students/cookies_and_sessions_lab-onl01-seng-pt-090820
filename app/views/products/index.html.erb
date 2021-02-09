@@ -4,8 +4,9 @@
 <% end %>
 
 <form>
-<%= form_tag posts_path do %>
+<%= form_tag("/", method:POST) %>
   <label>Cart:</label><br>
   <%= text_field_tag :'product' %><br>
+  <%= text_area_tag :'product' %><br>
   <%= submit_tag "add to cart" %>
 <% end %>
