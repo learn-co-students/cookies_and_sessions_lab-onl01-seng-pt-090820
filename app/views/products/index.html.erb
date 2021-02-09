@@ -1,0 +1,10 @@
+<ul>  
+  <%= cart.each do |product| %>
+    <li><%= product %></li>
+  <% end %>
+</ul>
+
+<%= form_for :product do |f| %>
+  <%= f.text_field :product %>
+  <%= f.submit %>
+<% end %>
